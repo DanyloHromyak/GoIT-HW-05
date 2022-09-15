@@ -5,8 +5,10 @@ class Car {
    * в консоль значення властивостей maxSpeed, speed, isOn, distance и price.
    */
 
-  static getSpecs({maxSpeed, price, isOn, distance, speed}) {
-    console.log(`maxSpeed: ${maxSpeed}, speed: ${speed}, isOn: ${isOn}, distance: ${distance}, price: ${price}`);
+  static getSpecs({ maxSpeed, price, isOn, distance, speed }) {
+    console.log(
+      `maxSpeed: ${maxSpeed}, speed: ${speed}, isOn: ${isOn}, distance: ${distance}, price: ${price}`
+    );
   }
   /*
    * Конструктор отримує об'єкт налаштувань.
@@ -18,7 +20,7 @@ class Car {
    *  isOn - заведений автомобіль, значення true або false. Спочатку false
    *  distance - загальний кілометраж, спочатку 0
    */
-  constructor({speed = 0, price, maxSpeed, isOn = false, distance = 0}) {
+  constructor({ speed = 0, price, maxSpeed, isOn = false, distance = 0 }) {
     this.speed = speed;
     this.price = price;
     this.maxSpeed = maxSpeed;

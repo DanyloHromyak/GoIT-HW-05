@@ -19,19 +19,17 @@ class Storage {
 }
 
 const storage = new Storage([
-  'Нанітоіди',
-  'Пролонгер',
-  'Залізні жупи',
-  'Антигравітатор',
+  "Нанітоіди",
+  "Пролонгер",
+  "Залізні жупи",
+  "Антигравітатор",
 ]);
-
-
 
 const items = storage.getItems();
 console.log(items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор" ]
 
-storage.addItem('Дроїд');
+storage.addItem("Дроїд");
 console.log(storage.items); // [ "Нанітоіди", "Пролонгер", "Залізні жупи", "Антигравітатор", "Дроїд" ]
 
-storage.removeItem('Пролонгер');
+storage.removeItem("Пролонгер");
 console.log(storage.items); // [ "Нанітоіди", "Залізні жупи", "Антигравітатор", "Дроїд" ]
